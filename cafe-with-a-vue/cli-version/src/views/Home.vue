@@ -12,7 +12,6 @@
 			<h2>Menu</h2>
 			<MenuItem
 				v-for="item in simpleMenu"
-				@add-items-to-cart="addToShoppingCart"
 				:name="item.name"
 				:image="item.image"
 				:price="item.price"
