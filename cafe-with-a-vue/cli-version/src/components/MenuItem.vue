@@ -73,8 +73,9 @@ export default {
 				<input v-model.number="quantity" id="add-item-quantity" type="number" />
 				<BaseButton
 					@click="updateShoppingCart(quantity)"
-					text="Ajouter au panier"
-				/>
+				>
+					Ajouter au panier
+				</BaseButton>
 			</div>
 		</div>
 	</div>
