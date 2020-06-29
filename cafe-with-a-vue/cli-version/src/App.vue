@@ -63,10 +63,10 @@
 export default {
 	name: 'app',
 	components: {
-		//HelloWorld
+		HelloWorld
 	},
-	data(){
-		return {
+	data() {
+		return{
 			address: "18 avenue du Beurre, Paris, France",
 			email: "hello@cafewithavue.bakery",
 			phone: "01 88 88 88 88",
@@ -76,7 +76,7 @@ export default {
 				{
 					name: "Croissant",
 					image: {
-						source: "/images/croissant.jpg",
+						source: "./images/croissant.jpg",
 						alt: "Un croissant"
 					},
 					inStock: true,
@@ -85,7 +85,7 @@ export default {
 				{
 					name: "Baguette de pain",
 					image: {
-						source: "/images/french-baguette.jpeg",
+						source: "./images/french-baguette.jpeg",
 						alt: "Quatre baguettes de pain"
 					},
 					inStock: true,
@@ -94,7 +94,7 @@ export default {
 				{
 					name: "Éclair",
 					image: {
-						source: "/images/eclair.jpg",
+						source: "./images/eclair.jpg",
 						alt: "Éclair au chocolat"
 					},
 					inStock: false,
@@ -115,16 +115,17 @@ export default {
 			this.shoppingCart += amount
 		}
 	}
+	
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+	margin-top: 60px;
 }
 </style>
