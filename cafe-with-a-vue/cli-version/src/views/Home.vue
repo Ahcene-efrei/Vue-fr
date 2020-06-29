@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import MenuItem from "./components/MenuItem"
+import MenuItem from "../components/MenuItem"
 
 export default {
 	name: "App",
